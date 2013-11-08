@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Map Size Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.1/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="main.css" rel="stylesheet" media="screen">
+  </head>
+  <body>
+    <div id="map-canvas"></div>
+    <div id="ui-panel">
+      <div id="controls">
+        <div class="form-group">
+          <button class="btn btn-primary btn-block" id="btn-trapezium">Set Spherical Trapezium</button>
+        </div>
+        <div class="form-group" id="min_zoom">
+          <label class="control-label zoom">Min Zoom</label>
+          <input class="form-control input-sm zoom" type="number" min="0" max="21" value="0">
+        </div>
+        <div class="form-group" id="max_zoom">
+          <label class="control-label zoom">Max Zoom</label>
+          <input class="form-control input-sm zoom" type="number" min="0" max="21" value="16">
+        </div>
+      </div>
+      <div id="results">
+        <div id="results-zoom"></div>
+        <div id="results-rect"></div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.0.3.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQIUQXCHqFAZvMlMjmZTMmI1JJOEiySC4&sensor=false"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
